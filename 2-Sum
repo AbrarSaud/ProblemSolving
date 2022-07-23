@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+
+public class MyClass {
+	public static void main(String[] args) {
+	    Scanner myObj = new Scanner(System.in);
+	 
+	
+			
+			//int   a = myObj.nextInt();
+			
+			 int n = myObj.nextInt();
+			 int sum = myObj.nextInt();
+			 int [] arr  = new int[n];
+			 String   s ="NO";
+		 
+		        for (int i = 0; i < n; i++) {
+		        	arr[i] = myObj.nextInt();
+		            
+		        }
+		    
+		    for (int i = 0; i < n; ++i)
+		    {
+		        for (int j = i+1; j < n; ++j)
+		        {
+		            if (arr[i]+arr[j]==sum)
+		            {
+		               s = "YES" ;
+		            }
+		        }
+		    }
+	
+		    System.out.println(s);		
+}}
+	  
